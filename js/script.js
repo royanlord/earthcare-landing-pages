@@ -141,17 +141,22 @@ function validateFormData(obj) {
 // btnSubmit.addEventListener('click', submit, true);
 
 
-document.getElementById("submit-form").addEventListener("click", function(event) {
-  event.preventDefault();
-  submit();
-});
-
 function submit() {
   const props = handleGetFormData();
   const hasil = validateFormData(props);
   if (hasil == false) {
-    document.getElementById("warning").innerText = "Periksa form anda sekali lagi";
+    document.getElementById("warning").innerHTML = "<i class='fa-solid fa-circle-exclamation'></i> Periksa form anda sekali lagi";
   } else {
     document.getElementById("warning").innerText = "";
+    document.getElementById("name").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("zip-code").value = "";
+    document.getElementById("status").checked = "";
   }
 }
+
+document.getElementById("submit-form").addEventListener("click", function(event) {
+  event.preventDefault();
+  submit();
+});
