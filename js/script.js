@@ -96,50 +96,6 @@ function validateFormData(obj) {
   return false;
 }
 
-// const btnSubmit = document.getElementById("submit-form");
-// btnSubmit.addEventListener('click', function submit(event) {
-//   event.preventDefault();
-//   if(validateFormData(handleGetFormData())) {
-//     document.getElementById("warning").innerText = " "
-//   } else {
-//     document.getElementById("warning").innerHTML = "<i class='fa-solid fa-circle-exclamation'></i> Periksa form anda sekali lagi";
-//   }
-// })
-
-// const form = document.getElementById("form-contact");
-// const btnSubmit = document.getElementById("submit-form");
-
-// function submit(event) {
-//   event.preventDefault();
-//   event.stopPropagation();
-//   if(validateFormData(handleGetFormData())) {
-//     document.getElementById("warning").innerText = " "
-//   } else {
-//     document.getElementById("warning").innerHTML = "<i class='fa-solid fa-circle-exclamation'></i> Periksa form anda sekali lagi";
-//   }
-// }
-
-// function disableRefresh(event) {
-//   event.preventDefault();
-//   event.stopPropagation()
-// }
-
-// form.addEventListener('submit', submit, true);
-// function submit() {
-//   if(validateFormData(handleGetFormData())) {
-//     document.getElementById("warning").innerText = " "
-//   } else {
-//     document.getElementById("warning").innerHTML = "<i class='fa-solid fa-circle-exclamation'></i> Periksa form anda sekali lagi";
-//   }
-// }
-
-// document.getElementById("submit-form").addEventListener("click", function(event){
-//   event.preventDefault();
-//   submit();
-// });
-
-// btnSubmit.addEventListener('click', submit, true);
-
 
 function submit() {
   const props = handleGetFormData();
